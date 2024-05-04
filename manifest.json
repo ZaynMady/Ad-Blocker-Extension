@@ -1,0 +1,16 @@
+{
+    "name" : "Rock AdBlocker", 
+    "description" : "Block all annoying ads", 
+    "manifest_version" : 3,
+    "version" : "0.1.0",
+    "permissions" : ["declarativeNetRequest"],
+    "declarative_net_request" : {
+        "rule_resources" : [
+            {
+                "id" : "ruleset_1", 
+                "enabled" : true,
+                "path" : "rules.json"
+            }
+        ]
+    }
+}
