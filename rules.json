@@ -3,12 +3,14 @@
         "id" : 1, 
         "priority" : 1, 
         "action" : {"type" : "block"}, 
-        "condition" : {"urlfilter" : "*://*doubleclick.net/*"}
+        "condition" : {"resourceTypes" : ["image", "subframe"]},
+        "requestDomains": ["googleadservices.com"]
     }, 
+
     {
-        "id" : 2, 
+        "id": 2, 
         "priority": 1, 
-        "action" : {"type" : "block"}, 
-        "condition" : {"urlfilter" : "*://googleadservices.com/*"}
+        "action" : {"type": "allow"}, 
+        "condition": {"resourceTypes": ["stylesheet"]}
     }
 ]
