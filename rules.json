@@ -3,8 +3,12 @@
         "id" : 1, 
         "priority" : 1, 
         "action" : {"type" : "block"}, 
-        "condition" : {"resourceTypes" : ["image", "subframe"]},
-        "requestDomains": ["googleadservices.com"]
+        "condition" : {"resourceTypes" : ["image", "media", "sub_frame", "script", "xmlhttprequest"],
+        "requestDomains": ["googleadservices.com",
+        "doubleclick.net",
+        "ads.yahoo.com",
+        "adservice.google.com"] 
+        }
     }, 
 
     {
